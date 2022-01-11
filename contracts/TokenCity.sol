@@ -3,6 +3,7 @@ pragma solidity ^0.8.0;
 
 import '@openzeppelin/contracts/access/Ownable.sol';
 import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
+
 import './interfaces/ILendingPool.sol';
 import './interfaces/ILendingPoolAddressesProvider.sol';
 import './interfaces/IProtocolDataProvider.sol';
@@ -10,7 +11,6 @@ import './interfaces/IUniswapV2Router02.sol';
 
 
 contract TokenCity is Ownable {
-
     IUniswapV2Router02 public immutable uniswapV2Router;
 
     constructor() {
@@ -76,5 +76,4 @@ contract TokenCity is Ownable {
             block.timestamp
         );
     }
-
 }

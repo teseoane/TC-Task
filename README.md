@@ -1,4 +1,4 @@
-# Safemoon.sol
+# TC task
 
 
 1. **Install node dependencies**
